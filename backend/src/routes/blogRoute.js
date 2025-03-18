@@ -72,7 +72,6 @@ router.get("/:id",async(req,res)=>{
     }
 })
 
-
 router.patch("/update-post/:id",async(req,res)=>{
     try{
         const postId=req.params.id;
@@ -96,7 +95,7 @@ router.patch("/update-post/:id",async(req,res)=>{
 
 
 router.delete("/:id",async(req,res)=>{
-    
+
 })
 
 module.exports=router
