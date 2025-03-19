@@ -16,6 +16,7 @@ const blogRoutes=require("./src/routes/blogRoute.js")
 app.use('/api/blogs',blogRoutes)
 
 
+
 async function main() {
     await mongoose.connect(process.env.MONGODB_URL);
     app.get('/',(req,res)=>{
