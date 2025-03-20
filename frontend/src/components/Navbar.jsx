@@ -5,8 +5,7 @@ const Navbar = () => {
     <header className='bg-white py-6 border'>
         <nav className='container mx-auto flex justify-between px-5'>
             <a href="/">Logo</a>
-        </nav>
-      
+        </nav> 
     </header>
   )
 }
