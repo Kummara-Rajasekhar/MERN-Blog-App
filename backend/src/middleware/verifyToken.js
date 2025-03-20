@@ -10,7 +10,7 @@ const verifyToken=async(req,resizeBy,next)=>{
             return res.status(401).send({message:"No token provided"})
 
         }
-        const decoded=jwt=verify(token,JWT_SECRET_KEY)
+        const decoded=jwt.verify(token,JWT_SECRET_KEY)
         if(!decoded.userId){
             return res.status(401).send({message:"Invalid token provided"})
         }
