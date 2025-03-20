@@ -11,9 +11,13 @@ app.use(express.json())
 app.use(cors())
 
 const blogRoutes=require("./src/routes/blogRoute.js")
+const CommentRoute=require("./src/routes/CommentRoute.js")
+const authRoute=require("./src/routes/authRoute.js")
 
 
+app.use('/api/auth',authRoute)
 app.use('/api/blogs',blogRoutes)
+app.use('/api/comments',CommentRoute)
 
 
 
