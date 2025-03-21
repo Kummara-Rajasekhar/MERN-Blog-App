@@ -20,7 +20,6 @@ app.use('/api/blogs',blogRoutes)
 app.use('/api/comments',CommentRoute)
 
 
-
 async function main() {
     await mongoose.connect(process.env.MONGODB_URL);
     app.get('/',(req,res)=>{
