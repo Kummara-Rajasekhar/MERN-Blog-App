@@ -14,6 +14,7 @@ const CommentRoute=require("./src/routes/CommentRoute.js")
 const authRoute=require("./src/routes/authRoute.js")
 
 
+
 app.use('/api/auth',authRoute)
 app.use('/api/blogs',blogRoutes)
 app.use('/api/comments',CommentRoute)
